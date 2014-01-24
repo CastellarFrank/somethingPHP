@@ -1,0 +1,62 @@
+/* please use this file for your own styles 
+ * it's need for easiest update of newest wersions
+*/
+#userLi{
+	float: right;
+	width: 180px;
+	margin-top: 13px;
+}
+.tableSpane{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#tableName{
+	
+	font-size: 16px;
+	font-family: verdana;
+}
+
+#testingScroll,#testingScroll2
+{	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	white-space: hidden;
+	overflow-x: auto;
+}
+
+#myTitle{
+	float:left;
+	margin-left: 30px;
+}
+
+.fpTable2 th, .fpTable3 th{ 
+	border-right: 1px solid black ;
+}
+
+
+
+.btnTableLeft, .btnTableRight{
+	background: none;
+	font-style: normal;
+	color: #FFF;
+	display: inline-block;
+	position: relative;
+	font-size: 15px;
+	float: left;
+	border: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+
+.btnTableRight{
+	float: right;
+}
+
+.block{
+	padding-bottom: 15px;
+}
+
+
+

@@ -1,0 +1,793 @@
+@import url(http://fonts.googleapis.com/css?family=neuropol);
+
+html{
+    background: url('../images/bg1.jpg');
+    background-position: center;
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+
+body{
+	margin: 0px;
+}
+
+#contenedor{
+	position: relative;
+	top:-20px;
+	width: 1000px;
+	margin: 20px auto;
+	z-index:2;
+}
+
+#back-menu{
+	position: absolute;
+	width: 100%;
+	height:67px; 
+	background: url('../images/highlight-bg.png');
+	margin-top:-20px;
+	float:left;
+}
+
+#back-menu2{
+	position: absolute;
+	width: 100%;
+	height:64px; 
+	background: url('../images/menu-bg.png');
+	margin-top:-20px;
+	float:left;
+}
+
+#back-slider{
+	position: absolute;
+	width: 100%;
+	height:400px; 
+	margin-top:47px;
+	background-color:#303030;
+	/*margin-top:-20px;*/
+	float:left;
+}
+
+#back-slider2{
+	position: absolute;
+	width: 100%;
+	height:67px; 
+	margin-top:384px;
+	background: url('../images/highlight-bg.png');
+	/*margin-top:-20px;*/
+	float:left;
+}
+
+#facultadName{
+	position: absolute;
+	width: 450px;
+	height:100px; 
+	background: url('../imagenes/NombreFacultad2.png');
+	background-repeat: no-repeat;
+	margin-top:-130px;
+	margin-left:602px;
+	float:right;
+    z-index:1000;	
+}
+
+/*************************************************** INICIA MENU **********************************************************/ 
+
+#cssmenu, #cssmenu > ul{
+	
+	background: url('../images/highlight-bg.png') repeat;
+	padding-bottom: 3px;
+	font-family: century gothic; 
+	color:Khaki;
+	text-shadow: 0 0 0.2em khaki;
+	font-weight: 400;	
+	z-index:99999;
+}
+
+#cssmenu:before, #cssmenu:after, #cssmenu > ul:before, #cssmenu > ul:after {
+
+	content: '';
+	display: table;
+	
+}
+
+
+#cssmenu:after, #cssmenu > ul:after {
+
+	clear: both;
+	
+}
+
+#cssmenu {
+
+	zoom:1;
+	
+}
+
+#cssmenu > ul{
+	
+	background: url('../images/menu-bg.png') repeat;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	
+}
+
+#cssmenu > ul li{
+	
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+#cssmenu > ul > li{
+
+	float: left;
+	position: relative;
+	
+}
+
+#cssmenu > ul > li > a{
+
+	padding: 23px 26px;
+	display: block;
+	color: white;
+	font-size: 18px;
+	text-shadow: 0 0 0.2em khaki;
+	text-decoration: none;
+	text-shadow: 0 -1px 0 #c28130;
+	text-shadow: 0 -1px 0 rgba(151, 99, 33, .43);
+	line-height: 18px;
+	
+}
+
+
+#cssmenu > ul > li:hover > a{
+
+	background: url('../images/hover2.png') repeat;
+	
+}
+
+#cssmenu > ul > li > a > span{
+
+	line-height: 18px;
+	
+}
+
+#cssmenu > ul > li.active > a, #cssmenu > ul > li > a:active{
+	
+	background: url('../images/highlight-bg.png') repeat;
+	
+}
+
+
+
+/* HIJOOOOOOOOOOOOOOOOOOOOOOS */
+
+#cssmenu > ul ul{
+
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	top: 120px;
+	background: url('../images/hover2.png') repeat;
+	margin: 0;
+	padding: 0;
+	z-index: -1;
+	-webkit-transition: all .35s .2s ease-in-out;
+	-moz-transition: all .35s .2s ease-in-out;
+	-ms-transition: all .35s .2s ease-in-out;
+	transition: all .35s .2s ease-in-out;
+	
+}
+
+#cssmenu > ul li:hover ul{
+	opacity: 1;
+	visibility: visible;
+	margin: 0;
+	color: #000;
+	z-index: 2;
+	top:64px;
+	left: 0;
+	
+}
+
+#cssmenu > ul ul:before{
+
+	content: '';
+	position: absolute;
+	top: -10px;
+	width: 100%;
+	height: 20px;
+	background: transparent;
+	
+}
+
+
+#cssmenu > ul ul li{
+
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	
+}
+
+#cssmenu > ul ul li a{
+
+	padding: 18px 26px;
+	display: block;
+	color: white;
+	font-size: 14px;
+	text-decoration: none;
+	width: 150px;
+	border-left: 4px solid transparent;
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	-ms-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+	text-shadow: 0 -1px 0 #c28130;
+	text-shadow: 0 -1px 0 rgba(151, 99, 33, .43);
+
+}
+
+#cssmenu > ul ul li a:hover{
+
+	border-left: 4px solid #055988;
+	background: url('../images/highlight-bg.png') repeat;
+
+}
+
+#cssmenu > ul ul li a:active{
+
+	background: url('../images/menu-bg.png') repeat;
+
+}
+/*********************************************************** TERMINA MENU ******************************************************/
+
+#cuerpo{
+	float:left;
+	width: 100%;	
+	margin-top: 50px;
+}
+
+#galeriaFondo{
+	float:left;
+	width: 100%;	
+	margin-top: 50px;
+	/*background-color: white;*/
+}
+
+#Mantenimiento{
+	float:left;
+	width: 100%;	
+	margin-top: 50px;
+	background-color: white;
+	opacity: 0.8;
+}
+
+#Mantenimiento p {
+	font-family: "Ubuntu", sans-serif;
+	font-style: oblique;
+	text-align:left;
+	color:black;
+}
+
+#Mantenimiento h1, h3{
+	padding: 20px;
+	font-family: "Ubuntu", sans-serif;
+}
+
+#Mantenimiento h2 {
+     padding: 50px;
+     font-family: "Ubuntu", sans-serif;
+}
+
+#Mantenimiento h1{
+        background-color:black;
+	font-size:25px;
+	font-family: "Ubuntu", sans-serif;
+	color:orange;
+	text-align:left
+	padding:10px;
+}
+
+#Mantenimiento button{
+    background-color:DarkGray;
+	border:medium none;
+	color:black;
+	display:block;
+	float:right;
+	font-family: "Ubuntu", sans-serif;
+	height:30px;
+	margin-left: 10px;
+	text-align:center;
+	width:150px;
+}
+
+#Mantenimiento button:hover{
+  cursor:pointer;
+}
+
+#Mantenimiento input{
+	border:medium none;
+	color:black;
+	display:block;
+	float:left;
+	font-family: "Ubuntu", sans-serif;
+	height:25px;
+	margin-left: 10px;
+	text-align:left;
+	width:280px;
+}
+
+#Mantenimiento select{
+	font-family: "Ubuntu", sans-serif;
+	border:medium none;
+	color:black;
+	display:block;
+	float:left;
+	height:25px;
+	margin-left: 10px;
+	text-align:left;
+	width:280px;
+}
+
+#Mantenimiento select:hover{
+  cursor:pointer;
+}
+
+#cuadroContenedor{
+	float:left;
+	width: 100%;	
+	margin-top: 50px;
+	background-color: #F8F8F8; 
+}
+
+.encabezado
+{
+	color:#fff;
+	background-color:#E2980E;
+	padding:5px 20px;
+	margin-left:-20px;
+	position:relative;
+	width:98%;
+	box-shadow:1px 1px 2px #000;
+	-moz-box-shadow:1px 1px 2px #000;
+	-webkit-box-shadow:1px 1px 2px #000;
+	margin-bottom:30px;
+	font-family: "Ubuntu", sans-serif;
+}
+
+.border /*esquina izquierda*/
+{
+width:0px;
+height:0px;
+line-height:opx;
+border-left:20px solid transparent;
+border-top:10px solid #B05800;
+position:absolute;
+top:100%;
+left:0px;
+}
+
+#cuadroContenedor h1{
+    background-color:black;
+	font-size:25px;
+	font: neuropol;
+	color:orange;
+	text-align:left
+	padding:10px;
+}
+
+
+#minimenu{
+	float:right;
+	width: 100%;
+	height: 40px;
+	background-color:darkgray;
+	margin-top:-20px;
+}
+
+
+#minimenu a{
+	font-size:18px;
+	font-family: "Ubuntu", sans-serif;
+	color:black;
+	text-align:right;
+	padding:28px;
+}
+
+
+#contenido{
+	float:left;
+	width: 680px;
+	/*background-color:Khaki;*/
+	/*box-shadow: 10px 10px 20px black;*/
+}
+
+/********************** COSITAS PARA MODULO INICIO **************************/
+
+#region{
+    width:535px;
+	height:300px;
+	float:left;
+}
+
+#region2{
+    width:500px;
+	height:300px;
+	float:right;
+}
+
+
+#anuncio1{
+    width:680px;
+	height:300px;
+	background: url('../imagenes/anuncio.png');
+	background-repeat: no-repeat;
+}
+
+#anuncio2{
+    width:680px;
+	height:300px;
+	background: url('../imagenes/prob.png');
+	background-repeat: no-repeat;
+}
+
+#anuncio3{
+    width:680px;
+	height:300px;
+	background: url('../imagenes/anuncio3.png');
+	background-repeat: no-repeat;
+}
+
+/***************** FIN DE ESAS COSITAS ************************/
+
+#contenido h1{
+	font-size:28px;
+	font-family:neuropol;
+	color:white;
+	text-align:left;
+	padding:20px;
+	text-shadow: 0 0 0.2em black;
+}
+
+#contenido p{
+	font-size:18px;
+	font-family: century gothic;
+	color:black;
+	text-align:left;
+	padding:10px;
+}
+
+#menuv{
+    float:right;
+	width: 300px;
+}
+
+#menuv button{
+    background-color:#3366FF;
+	border:medium none;
+	color:white;
+	display:block;
+	float:left;
+	font-family: century gothic;
+	height:35px;
+	text-align:center;
+	width:270px;
+}
+
+#menuv button:hover{
+  cursor:pointer;
+}
+
+#menuv th{
+    background-color:#FF9900;
+	border:medium none;
+	color:white;
+	display:block;
+	float:center;
+	font-family: neuropol;
+	font-size:25px;
+	height:40px;
+	text-align:center;
+	width:270px;
+}
+
+#menuv input{
+	color:black;
+	display:block;
+	float:left;
+	font-family: century gothic;
+	height:25px;
+	text-align:left;
+	width:265px;
+}
+
+#menuv select{
+	font-family: century gothic;
+	border:medium none;
+	color:black;
+	display:block;
+	float:left;
+	height:25px;
+	margin-left: 10px;
+	text-align:left;
+	width:280px;
+}
+
+#menuv select:hover{
+  cursor:pointer;
+}
+
+
+/*VAMOS A USAR ESTO PARA LAS MINIIMAGENES DE LOS BULLETS DEL SLIDER*/
+#minifotos:hover{             
+   cursor:pointer;
+ }
+
+ 
+ 
+ 
+/*VAMOS A USAR ESTO PARA SOLICITUD DE CLASES*/
+#fondoclase{
+	float:left;
+	width: 100%;	
+	margin-top: 50px;
+	background-color: DarkGray;
+	opacity: 0.7;
+}
+
+#fondoclase p {
+	font-family: "Ubuntu", sans-serif; 
+	font-style: oblique;
+	text-align:left;
+	color:white;
+}
+
+#fondoclase h1, h2, h3{
+	padding: 20px;
+}
+/*****************************************************************************************************************
+*
+*                                               noticias
+*
+******************************************************************************************************************/
+.encabezadito
+{
+	color:white;
+	background-color:#E2980E;
+	padding:5px 20px;
+	margin-left:-40px;
+	position:relative;
+	width:100%;
+	box-shadow:1px 1px 2px #000;
+	-moz-box-shadow:1px 1px 2px #000;
+	-webkit-box-shadow:1px 1px 2px #000;
+	margin-bottom:30px;
+	font-family: century gothic;
+	
+}
+
+
+.encabezadito2
+{
+	color:#fff;
+	background-color:#E2980E;
+	padding:5px 20px;
+	margin-left:-45px;
+	position:relative;
+	width:980px;
+	box-shadow:1px 1px 2px #000;
+	-moz-box-shadow:1px 1px 2px #000;
+	-webkit-box-shadow:1px 1px 2px #000;
+	margin-bottom:30px;
+        font-family: century gothic;
+	
+}
+
+
+.borde/*esquina izquierda*/
+{
+width:0px;
+height:0px;
+line-height:opx;
+border-left:20px solid transparent;
+border-top:10px solid #B05800;
+position:absolute;
+top:100%;
+left:0px;
+}
+
+#paginacion
+{
+	top:55px;
+	color:#fff;
+	background-color:white;
+	padding:5px 20px;
+	position:relative;
+	width:96%;
+	/*box-shadow:1px 1px 5px #000;
+	-moz-box-shadow:1px 1px 5px #000;
+	-webkit-box-shadow:1px 1px 5px #000;*/
+	margin-bottom:50px;
+ 	float: left;
+	opacity: 0.8;
+	
+}
+
+#paginacion a{
+ font-family: century gothic;
+ color: black;
+}
+
+
+#cuerpo2
+{
+	/*margin:auto;
+	background-color:LightGray;
+	width:100%;*/
+        margin-top: 30px;
+	float:left;
+	width: 98%;	
+	background-color:#F8F8F8;
+	padding-left:20px;
+	padding-bottom:20px;
+
+
+}
+
+#cuerpo2 span, p, a{
+ font-family: century gothic;
+}
+
+#cuerpo2 h1{
+ font-family: century gothic;
+ font-weight: normal;
+ font-size:25px;
+}
+
+#cuerpoMantenimiento
+{
+	margin:auto;
+	margin-top:20px;
+	padding:25px;
+	background-color:#F8F8F8;
+	float: left;
+        width: 95%;	
+}
+
+#cuerpoMantenimiento h1{
+ font-family: century gothic;
+ font-weight: normal;
+ font-size:28px;
+}
+
+#cuerpoMantenimiento span
+{
+	font-family: century gothic;
+}
+
+.imgnoti
+{
+	-webkit-box-shadow:1px 1px 5px #000;
+	box-shadow:1px 1px 5px #000;
+	-moz-box-shadow:1px 1px 5px #000;
+	margin-right:10px;
+	
+	}
+
+#conteo
+{
+	float:left;
+    /*width: 100%;*/
+   width:295px;
+   /*background-color:#F0F0F0;*/
+   background-color:white;
+   height: 200px;
+  
+   
+ 
+}
+
+
+/*USUARIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOS*/
+
+.encabezado2
+{
+	color:#fff;
+	background-color:#E2980E;
+	padding:5px 20px;
+	margin-left:-45px;
+	position:relative;
+	width:980px;
+	box-shadow:1px 1px 2px #000;
+	-moz-box-shadow:1px 1px 2px #000;
+	-webkit-box-shadow:1px 1px 2px #000;
+	margin-bottom:30px;
+	font-family: "Ubuntu", sans-serif;
+}
+
+#cuerpoMantenimiento2
+{
+	margin:auto;
+	margin-top:20px;
+	padding:25px;
+	background-color:#F8F8F8;
+	font-family: century gothic;
+	float: left;
+        width: 95%;	
+}
+
+#cuerpoMantenimiento2 span
+{
+	font-family: century gothic;
+}
+
+
+#cuerpoMantenimiento2 p {
+	font-family: "Ubuntu", sans-serif;
+	font-style: oblique;
+	text-align:left;
+	color:black;
+}
+
+#cuerpoMantenimiento2 h1, h3{
+	padding: 20px;
+	font-family: "Ubuntu", sans-serif;
+}
+
+#cuerpoMantenimiento2 h2 {
+     padding: 50px;
+     font-family: "Ubuntu", sans-serif;
+}
+
+#cuerpoMantenimiento2 h1{
+    background-color: rgb(34, 33, 33);
+	font-size:25px;
+	font-family: "Ubuntu", sans-serif;
+	color:orange;
+	text-align:left
+	padding:10px;
+}
+
+
+
+#cuerpoMantenimiento2 th 
+{
+  background-color: #FFAD00;
+  color: white;
+}
+
+#cuerpoMantenimiento2 a
+{ color: black;
+} 
+
+
+
+
+/*****************************************************************************************************************
+*
+*                                               FOOTER
+*
+******************************************************************************************************************/
+ #footer{
+   margin-top:25px;
+   /*width: 1000px;*/
+   width: 100%;
+   height:60px;
+   background: url('../images/menu-bg.png');
+   float:left;
+ }
+
+ 
+ #footer p{
+    font-size:16px;
+	font-weight: 400;
+	font-family: century gothic;
+	/*font-family: sans-serif bold;*/
+	color:white;
+	text-align:center;
+ }
+
